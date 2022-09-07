@@ -63,7 +63,6 @@ def get_angle(p0, p1=np.array([0,0]), p2=None):
     return np.degrees(angle)
 
 #theta = angle of the bikes forwards direction with respect to x-axis
-#Steering angle = delta
 def get_steering_angle(currentPos, goalPos, theta):
     """
     returns the steering angle to reach the designated lookahead given our current pose (position and angle theta) and the position of the lookahead
