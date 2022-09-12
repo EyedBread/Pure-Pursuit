@@ -121,7 +121,7 @@ def main():
     state = [currentPos[0],currentPos[1], currentAngle]
     while racing:
 
-        state_dot = update(state[0], state[1], state[2], steering_angle) 
+        state_dot = update(state[2], steering_angle) 
 
         next_state = [sum(value) for value in zip(state, state_dot)] #next_state = state + state_dot
 
