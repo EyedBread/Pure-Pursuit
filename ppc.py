@@ -4,6 +4,8 @@ import time
 import numpy as np
 from shapely.geometry import LineString
 from shapely.geometry import Point
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 """
 Pure pursuit controller using a kinematic bicycle model, where the reference point is on the center of the rear axle. Not implemented with ROS currently.
@@ -16,7 +18,7 @@ waypoints = [[4,3], [7,0], [9,3], [7,5], [4,3.01]] #In order to create a closed 
 startPos = [4,3] #Starting position for car
 startAngle = 0  #Starting angle for car
 passed = [] #Waypoints which the lookahead has passed and are no longer relevant for the current loop
-dt = 0.1 #time_dot
+dt = 0.05 #time_dot
 
 def update(theta,delta):
     """ 

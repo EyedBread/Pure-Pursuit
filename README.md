@@ -1,9 +1,11 @@
 # Pure-Pursuit
 A pure pursuit controller implemented using python.
 
+![](ppc.gif)
+
 To run, simply:
 ```
-python ppc.py
+python3 ppc.py
 ```
 
 Dependencies:
@@ -12,3 +14,4 @@ Dependencies:
 - matplotlib
 - time
 - math
+- tk
